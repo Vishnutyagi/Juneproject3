@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi Timer App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="timers">
+            <h2 style="color: white;">Multiple Timers App</h2>
+            <div class="timer-input-section">
+                <h5 style="color: white;">Set Time:</h5> 
+                <input type="number" id="hours" placeholder="hh">
+                <input type="number" id="minutes" placeholder="mm">
+                <input type="number" id="seconds" placeholder="ss">
+                <button id="start-timer">Set</button>
+            </div>
+            <div style="width: 30%; border-radius: 50px; background-color: #39393E;padding: 20px; text-align: center; margin: 20px;">
+                Current Timers
+            </div>
+            <div class="active-timers-section" id="active-timers">
+            </div>
+            <audio id="timer-sound" src="alarm.mp3"></audio>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
